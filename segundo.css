@@ -1,0 +1,137 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    width: 100%;
+   background-image: url('https://th.bing.com/th/id/OIP.6O4XiQ12mNa-g7PcVi9R3QHaFj?pid=ImgDet&rs=1');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 100% 50%
+}
+.nav{
+    position: fixed;
+    top:0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 80px;
+
+}
+.logo{
+    letter-spacing: 1px;
+    float: left;
+    color: #fff;
+    font-size: 22px;
+    line-height: 80px;
+    padding: 0 6em;
+}
+.Menu{
+float: right;
+line-height: 60px;
+margin: 0%;
+}
+.Menu ul{
+    list-style: none;
+
+}
+.Menu ul li{
+    display: inline-block;
+}
+.Menu ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: lighter;
+    padding: 0 20px;
+}
+.header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: lighter;
+    color: #000;
+}
+.header span{
+font-size: 52px;
+color: #000;
+}
+.header p{
+    font-size: 25px;
+}
+.header button{
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background: none;
+}
+.Basicas{
+    position: absolute;
+    top: 96%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    font-weight: lighter;
+    line-height: 30px;
+    background: none;
+    color: #000;
+
+}
+.Burberry{
+    position: absolute;
+    top: 100%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    font-weight: lighter;
+    line-height: 30px;
+    background: none;
+    color: #000;
+
+}
+.Calças{
+    position: absolute;
+    top: 100%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    font-weight: lighter;
+    line-height: 30px;
+    background: none;
+    color: #000;
+
+}
+.Casacos{
+    position: absolute;
+    top: 100%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    font-weight: lighter;
+    line-height: 30px;
+    background: none;
+    color: #000;
+
+}
+.Ver{
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: lighter;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background: none;
+    background: none;
+
+}

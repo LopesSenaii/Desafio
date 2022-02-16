@@ -1,0 +1,113 @@
+<div class="row">
+    
+    
+    <div class="box">
+        <div class="col-sm-3">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <strong>Camisetas Basicas</strong>
+                </div>
+                <div class="panel-roupa">
+                    <h3 class="panel-title price">10.99$
+                    </h3>
+                </div>
+                <h3 class="conteudo">3 camisetas basicas</h3> 
+                <ul class="list-group">
+                    <li class="list-group-item">P</li>
+                    <li class="list-group-item">M</li>
+                    <li class="list-group-item">G</li>
+                    <li class="list-group-item">GG</li>
+                </ul>
+                <div>
+                    Camisetas Basicas <strong>$10.99</strong><br>
+                    qtd: <input type="number" value="1" min="1" max="1" id="qtd1">
+                    <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Camisetas', document.getElementById('qtd1').value, '10.99', 1)"> Comprar </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <strong>Camisetas Burberry</strong>
+                </div>
+                <div>
+                </div>
+                <div class="panel-body">
+                    <h3 class="panel-title price">17.99$
+                    </h3>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item">P</li>
+                    <li class="list-group-item">M</li>
+                    <li class="list-group-item">G</li>
+                    <li class="list-group-item">GG</li>
+                </ul>
+                <div>
+                    <br>Burberry <strong>$17.99</strong><br>
+                    qtd: <input type="number" value="1" min="1" max="1" id="qtd2">
+                    <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Burberry', document.getElementById('qtd2').value, '17.99', 2)"> Comprar </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <strong>Calças<span class="label label-success"> Promoção</span></strong>
+                </div>
+                <div class="panel-body">
+                    <h3 class="panel-title price">$5.99
+                    </h3>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item">P</li>
+                    <li class="list-group-item">M</li>
+                    <li class="list-group-item">G</li>
+                    <li class="list-group-item">GG</li>
+                </ul>
+                <div>
+                    <br>Calças <strong>$5.99</strong><br>
+                    qtd: <input type="number" value="1" min="1" max="1" id="qtd3">
+                    <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Casacos', document.getElementById('qtd3').value, '5.99', 3)"> Comprar </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">
+                    <strong>Casacos</strong>
+                </div>
+                <div class="panel-body">
+                    <h3 class="panel-title price">$39.49
+                    </h3>
+                </div>
+                <ul class="list-group">
+                    <li class="list-group-item">P</li>
+                    <li class="list-group-item">M</li>
+                    <li class="list-group-item">G</li>
+                    <li class="list-group-item">GG</li>
+                </ul>
+                <div>
+                    <br>Calças <strong>$39.49</strong><br>
+                    qtd: <input type="number" value="1" min="1" max="1" id="qtd3">
+                    <button type="button" id="adicionar1" id="produto1" onclick="AddCarrinho('Calças', document.getElementById('qtd3').value, '39.49', 3)"> Comprar </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<meta charset="UTF-8">
+
+<p align="center">
+	<a href="Funciona.html"> Ver Carrinho de compras </a>
+</p>	
+<meta charset="UTF-8">
+<script>
+	function AddCarrinho(produto, qtd, valor, posicao)
+	{
+		localStorage.setItem("produto" + posicao, produto);
+		localStorage.setItem("qtd" + posicao, qtd);
+		valor = valor * qtd;
+		localStorage.setItem("valor" + posicao, valor);
+		alert("Produto adicionado ao carrinho!");
+	}
+</script>
